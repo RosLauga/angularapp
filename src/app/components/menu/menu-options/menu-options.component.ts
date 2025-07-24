@@ -12,14 +12,17 @@ export class MenuOptionsComponent {
     {
       title: "dashboard",
       path: "dashboard",
+      icon: "home",
     },
     {
       title: "trendings",
       path: "/dashboard/trendings",
+      icon: "book",
     },
     {
       title: "search",
       path: "/dashboard/search",
+      icon: "search",
     },
   ];
 }

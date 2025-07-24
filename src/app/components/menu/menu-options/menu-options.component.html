@@ -1,5 +1,9 @@
-<div id="nav" class="w-full px-6 flex">
+<div id="nav" class="w-full px-6 flex flex-col">
   @for (item of items; track $index) {
-  <app-button [title]="item.title" [path]="item.path"></app-button>
+  <app-button
+    [title]="item.title"
+    [path]="item.path"
+    [icon]="item.icon"
+  ></app-button>
   }
 </div>

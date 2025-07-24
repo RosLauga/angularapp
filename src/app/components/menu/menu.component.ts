@@ -4,6 +4,7 @@ import { MenuHeaderComponent } from "./menu-header/menu-header.component";
 import { MenuOptionsComponent } from "./menu-options/menu-options.component";
 
 @Component({
+  selector: "app-menu",
   templateUrl: "./menu.component.html",
   imports: [RouterOutlet, MenuHeaderComponent, MenuOptionsComponent],
 })

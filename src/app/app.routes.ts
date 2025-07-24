@@ -1,12 +1,12 @@
 import { Routes } from "@angular/router";
-import { LeftMenu } from "./components/menu/menu.component";
 import { TrendingsComponent } from "./pages/trendings/trendings.component";
 import { SearchComponent } from "./pages/search/search.component";
+import { DashboardComponent } from "./pages/dashboard/dashboard.component";
 
 export const routes: Routes = [
   {
     path: "dashboard",
-    component: LeftMenu,
+    component: DashboardComponent,
     children: [
       {
         path: "trendings",
