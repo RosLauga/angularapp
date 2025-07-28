@@ -1,6 +1,13 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ButtonComponent } from "../../../tools/button/button.component";
 
+interface menuOptions {
+  title: string;
+  path: string;
+  icon: string;
+  customStyle: string;
+}
+
 @Component({
   selector: "app-menu-options",
   imports: [ButtonComponent],
@@ -8,21 +15,18 @@ import { ButtonComponent } from "../../../tools/button/button.component";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MenuOptionsComponent {
-  public items = [
-    {
-      title: "dashboard",
-      path: "dashboard",
-      icon: "home",
-    },
+  public items: menuOptions[] = [
     {
       title: "trendings",
       path: "/dashboard/trendings",
       icon: "book",
+      customStyle: "w-xs h-18",
     },
     {
       title: "search",
       path: "/dashboard/search",
       icon: "search",
+      customStyle: "w-xs h-18",
     },
   ];
 }

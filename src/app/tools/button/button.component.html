@@ -1,4 +1,9 @@
-<a [routerLinkActive]="'active'" [style]="customStyle" [routerLink]="path">
+<a
+  routerLinkActive="bg-blue-800"
+  [routerLinkActiveOptions]="{ exact: true }"
+  [class]="customStyle"
+  [routerLink]="path"
+>
   <mat-icon
     aria-hidden="false"
     aria-label="Example home icon"

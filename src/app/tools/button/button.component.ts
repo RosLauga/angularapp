@@ -6,6 +6,7 @@ import { MatIconModule } from "@angular/material/icon";
   selector: "app-button",
   imports: [RouterLink, RouterLinkActive, MatIconModule],
   templateUrl: "./button.component.html",
+  styleUrl: "./button.component.css",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ButtonComponent {
