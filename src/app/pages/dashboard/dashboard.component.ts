@@ -1,9 +1,10 @@
-import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { ChangeDetectionStrategy, Component, signal } from "@angular/core";
 import { LeftMenu } from "../../components/menu/menu.component";
+import { RouterOutlet } from "@angular/router";
 
 @Component({
   selector: "app-dashboard",
-  imports: [LeftMenu],
+  imports: [LeftMenu, RouterOutlet],
   templateUrl: "./dashboard.component.html",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

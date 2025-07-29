@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { ButtonComponent } from "../../../tools/button/button.component";
+import { ButtonComponent } from "@tools/button/button.component";
 
 interface menuOptions {
   title: string;

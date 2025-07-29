@@ -1,9 +1,10 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from "@angular/core";
 
 @Component({
-  selector: 'app-menu-header',
+  selector: "app-menu-header",
   imports: [],
-  templateUrl: './menu-header.component.html',
+  templateUrl: "./menu-header.component.html",
+  styleUrl: "./menu-header.component.css",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MenuHeaderComponent { }
+export class MenuHeaderComponent {}

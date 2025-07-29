@@ -1,12 +1,10 @@
-<div class="flex flex-col relative w-screen">
-  <div
-    id="menu"
-    class="bg-gray-900 min-h-screen z-10 text-slate-300 w-64 fixed left-0 h-screen overflow-y-scroll"
-  >
-    <!-- side menu header -->
-    <app-menu-header></app-menu-header>
-    <!-- side menu options -->
-    <app-menu-options></app-menu-options>
-  </div>
-  <router-outlet />
+<div
+  id="menu"
+  (click)="openCloseMenu()"
+  [class]="menuOpen() ? 'menuOpen' : 'menuClose'"
+>
+  <!-- side menu header -->
+  <app-menu-header></app-menu-header>
+  <!-- side menu options -->
+  <app-menu-options></app-menu-options>
 </div>
